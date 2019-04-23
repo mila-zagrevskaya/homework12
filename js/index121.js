@@ -1,6 +1,7 @@
 
 
 function addToCookie(){
+	document.cookie
     var res = document.cookie
         .split ( "; " )
             .map ( x =>
