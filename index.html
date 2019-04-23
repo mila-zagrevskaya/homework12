@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOMEWORKS FEA-12</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+</head>
+<body onload = "showCode (addToCookie, '.show-code1' ) , 
+showCode (exercise2, '.show-code2'), showCode (exercise3, '.show-code3')">
+	<div class="wrap">
+		<div class="wrapper">
+			<h1>Загревская Людмила <br>fea-12</h1>
+			<div class="exercise">
+				<h2> exercise 12.1</h2>
+				<p class = 'description bold'>
+					Захостить на гитхабе приложение, которое:
+				</p>
+				<p class = 'description'>
+					<ul class = 'description'>
+						<li>читает куки на клиенте, и если там есть дата последнего посещения, выводит ее на страницу</li>
+						<li>пишет в куки на клиенте текущую дату посещения</li>
+					</ul>
+				</p>
+				<pre class="show-code1">
+					
+				</pre>
+				<div class="result1"></div>
+				<button name = "btn" class="btn" onclick = "exercise1()"> Show result</button>
+				
+			</div>
+
+			<div class="exercise">
+				<h2>exercise  12.2</h2>
+				<p class = 'description'>localStorage<br> 
+				Объявить функцию, которая будет вызываться в момент изменения хэш-части адреса страницы и сохранять в localStorage клиента hash-часть адреса страницы как pageId и время входа (в секундах) как startTime <br> Назначить эту функцию обработчиком события hashchange объекта window <br> Желательно, чтобы при изменении хеш-части адреса происходило обновление контента страницы без перезагрузки ( например, изменялся заголовок и картинка, чтобы создать иллюзию перехода на новую страницу ) <br> Отслеживать в панели разработчика изменения в localStorage
+				</p>
+				<p class = 'description bold'> После загрузки страницы меняйте хеш-часть адреса на 0, 1, 2, 3
+				</p>
+				<img src="images/Screenshot_1.png" alt="screen" class="screen">
+				<p class = 'description'>и наблюдайте изменения на странице и в localStorage
+				</p>
+				<img src="images/Screenshot_2.png" alt="screen" class="screen">
+				<pre class = "show-code2">
+				</pre>
+				<!-- <div class="result2"></div> -->
+				<button name = "btn" class="btn" onclick = "exercise2()"> Show result in console </button>
+			</div>
+			<div class="exercise">
+				<h2>exercise  12.3</h2>
+				<p class = 'description bold'>Рулетка
+				</p>
+				<p class = 'description'>
+					<ul class = 'description'>Напилить код, который:
+						<li>вставляет кнопку на страницу</li>
+						<li>добавляет обработчика события click кнопки</li>
+					</ul>
+				</p>
+				<p class = 'description'>
+					<ul class = 'description'>Обработчик события click:
+						<li>вычисляет случайное целое число от 1 до 20000 и помещает его в переменную winner</li>
+						<li>добавляет :point_right: картинку</li>
+						<li>ждет 4 секунды</li>
+						<li>плавно изменяет непрозрачность картинки до 0, в процессе изменяя src картинки на :point_right: новое значение</li>
+						<li>плавно изменяет непрозрачность картинки до 1</li>
+						<li>ждет еще 2 секунды, и делает fetch-запрос на гитхабовский API, чтобы получить данные юзера под номером winner</li>
+						<li>при получении ответа изменяет src картинки на аватарку юзера, а так же вставляет логин юзера под фотографией</li>
+						<li>ждет еще 10 секунд и удаляет картинку и подпись</li>
+					</ul>
+				</p>
+				<p class = 'description'>
+					На время показа картинок кнопку лучше прятать
+				</p>
+				<pre class = "show-code3">
+
+
+				</pre>
+				<div class="result3"></div>
+				<button name = "btn" class="btn" onclick = "exercise3()"> Show result </button>
+			</div>
+		</div>
+	</div>
+<script src = "js/index121.js"></script>
+<script src = "js/index122.js"></script>
+<script src = "js/index123.js"></script>
+</body >
+</html>
