@@ -1,7 +1,7 @@
 
 
 function addToCookie(){
-	document.cookie
+	document.cookie = "userName=Mila"
     var res = document.cookie
         .split ( "; " )
             .map ( x =>
