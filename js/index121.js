@@ -16,7 +16,7 @@ function addToCookie(){
                         return date.lastVisit
                     }
                 )
-    res ? document.body.appendChild(
+    res ? document.querySelector('.result1').appendChild(
             document.createElement('p')).innerText = `Last visit was : ${res.lastVisit}` 
                 : null
     document.cookie = `lastVisit=${new Date().toLocaleString()}`   
