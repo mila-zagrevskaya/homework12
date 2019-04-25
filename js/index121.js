@@ -1,7 +1,5 @@
-
-
 function addToCookie(){
-    var res = document.cookie = "userName=Mila"
+    var res = document.cookie
         .split ( "; " )
             .map ( x =>
                 Object.assign (
@@ -18,11 +16,14 @@ function addToCookie(){
                         return date.lastVisit
                     }
                 )
-    res.lastVisit ? document.querySelector(".result3").appendChild(
-            document.createElement('p')).innerText = `Last visit was : ${res.lastVisit}`  : 
-    		document.cookie = `lastVisit=${new Date().toLocaleString()}` 
-       
+    res ? document.body.appendChild(
+            document.createElement('p')).innerText = `Last visit was : ${res.lastVisit}` 
+                : null
+    document.cookie = `lastVisit=${new Date().toLocaleString()}`   
 }
+
+
+
 function exercise1 (event) {
 	addToCookie()		
 }
@@ -30,7 +31,7 @@ function exercise1 (event) {
 
 
 
-function showCode(param1, param2){
-    document.querySelector(param2).innerHTML = param1.toLocaleString()
-}
+// function showCode(param1, param2){
+//     document.querySelector(param2).innerHTML = param1.toLocaleString()
+// }
 
