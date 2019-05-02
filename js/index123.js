@@ -1,6 +1,7 @@
 function exercise3 (event) {
 	
-var addElem = tagName => document.querySelector('.result3').appendChild (
+var addElem = tagName => document.querySelector(
+    '.result3').appendChild (
         document.createElement ( tagName )
     )
 
@@ -48,11 +49,6 @@ var addElem = tagName => document.querySelector('.result3').appendChild (
                 event.target.style.display = "block"
             })
     }
-
-
-
-
-
 }
 
 
